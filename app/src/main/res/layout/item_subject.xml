@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/transparent">
+
+    <Space
+        android:id="@+id/space"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:background="@android:color/transparent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginBottom="28dp"
+        app:cardCornerRadius="15dp"
+        app:cardElevation="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/space">
+
+        <LinearLayout
+            android:id="@+id/container"
+            android:layout_width="match_parent"
+            android:layout_height="160dp"
+            android:background="@drawable/bg_gradient4"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp"
+                android:contentDescription="@string/app_name"
+                android:src="@drawable/quantopian_svgrepo_com" />
+
+            <TextView
+                android:id="@+id/count_quiz"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="10dp"
+                android:fontFamily="sans-serif-condensed"
+                android:text="20 ta quiz"
+                android:textColor="#A3FFFFFF"
+                android:textSize="16dp" />
+
+            <TextView
+                android:id="@+id/name"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_marginStart="20dp"
+                android:layout_weight="1"
+                android:fontFamily="sans-serif-black"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:text="Matematika"
+                android:textColor="@color/app_text_color"
+                android:textSize="25dp" />
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <ImageView
+        android:id="@+id/img"
+        android:layout_width="220dp"
+        android:layout_height="140dp"
+        android:layout_marginEnd="10dp"
+        android:contentDescription="@string/app_name"
+        android:elevation="10dp"
+        android:src="@drawable/math"
+        app:layout_constraintBottom_toTopOf="@id/card"
+        app:layout_constraintRight_toRightOf="@id/card"
+        app:layout_constraintTop_toTopOf="@id/card" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

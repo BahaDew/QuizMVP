@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_gradient1"
+    tools:context=".presentation.result_screen.ResultActivity">
+
+    <View
+        android:id="@+id/status"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <FrameLayout
+        android:id="@+id/bar"
+        android:layout_width="match_parent"
+        android:layout_height="?android:actionBarSize"
+        app:layout_constraintTop_toBottomOf="@id/status">
+
+        <ImageView
+            android:id="@+id/btn_close"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="end|center"
+            android:layout_marginEnd="10dp"
+            android:background="@drawable/bg_circle_ripple"
+            android:contentDescription="@string/app_name"
+            android:padding="10dp"
+            android:src="@drawable/cancel_svgrepo_com"
+            app:tint="#FFF" />
+    </FrameLayout>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="20dp"
+        app:cardBackgroundColor="@color/app_no_active_color"
+        app:cardCornerRadius="30dp"
+        app:cardElevation="10dp"
+        app:layout_constraintBottom_toTopOf="@id/pass"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/bar">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/cub"
+                android:layout_width="170dp"
+                android:layout_height="150dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/chocolate"
+                android:contentDescription="@string/app_name"
+                android:scaleType="centerCrop"
+                android:src="@drawable/cub" />
+
+            <TextView
+                android:id="@+id/natija"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="@font/dancing_script_medium"
+                android:text="Ajoyib natija!"
+                android:textColor="#000"
+                android:textSize="40dp" />
+
+            <TextView
+                android:id="@+id/percentage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="15dp"
+                android:elevation="10dp"
+                android:fontFamily="@font/nunito_medium"
+                android:gravity="center"
+                android:padding="5dp"
+                android:shadowColor="#14A84B"
+                android:shadowDx="5"
+                android:shadowDy="5"
+                android:shadowRadius="4"
+                android:text="90%"
+                android:textColor="#14A84B"
+                android:textSize="35dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="10dp"
+                android:fontFamily="@font/nunito_medium"
+                android:text="Quiz muvaffaqiyatli yakunlandi!"
+                android:textColor="#000"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/result"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginHorizontal="45dp"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/nunito_medium"
+                android:justificationMode="inter_word"
+                android:text="Siz Ingiliz tili quizining 10 ta testidan 9 tasiga javob berdingiz !"
+                android:textColor="#CE000000"
+                android:textSize="20dp" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="Natijani ulashish: "
+                    android:textColor="#000"
+                    android:textSize="18dp" />
+
+                <ImageView
+                    android:id="@+id/btn_share"
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:layout_margin="20dp"
+                    android:background="@drawable/bg_share"
+                    android:contentDescription="@string/app_name"
+                    android:elevation="10dp"
+                    android:padding="5dp"
+                    android:src="@drawable/share_2_svgrepo_com" />
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <View
+        android:id="@+id/pass"
+        android:layout_width="match_parent"
+        android:layout_height="84dp"
+        app:layout_constraintBottom_toBottomOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

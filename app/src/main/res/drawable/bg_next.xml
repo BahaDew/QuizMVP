@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ripple xmlns:android="http://schemas.android.com/apk/res/android"
+    android:color="@color/card_ripple_color">
+    <item android:id="@+id/mask">
+        <selector>
+            <item android:state_enabled="true">
+                <shape android:shape="rectangle">
+                    <solid android:color="#00CD88" />
+                    <corners
+                        android:bottomRightRadius="14dp"
+                        android:topRightRadius="14dp" />
+                </shape>
+            </item>
+            <item android:state_enabled="false">
+                <shape android:shape="rectangle">
+                    <solid android:color="#52B896" />
+                    <corners
+                        android:bottomRightRadius="14dp"
+                        android:topRightRadius="14dp" />
+                </shape>
+            </item>
+        </selector>
+    </item>
+</ripple>

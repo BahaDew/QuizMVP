@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="app_bar_color">#FEFEFE</color>
+    <color name="app_bg_color">#FEFEFE</color>
+    <color name="app_active_color">#E5802F</color>
+    <color name="app_no_active_color">#CAD8E4</color>
+    <color name="app_correct_color">#2EBC6C</color>
+    <color name="app_question_color">#1B6BA9</color>
+    <color name="app_text_color">#E5E6E9</color>
+    <color name="card_ripple_color">#B5FFFFFF</color>
+</resources>

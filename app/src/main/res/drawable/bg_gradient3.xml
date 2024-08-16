@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ripple xmlns:android="http://schemas.android.com/apk/res/android"
+    android:color="@color/card_ripple_color">
+    <item android:id="@+id/mask">
+        <shape android:shape="rectangle">
+            <gradient
+                android:startColor="#2D9386"
+                android:endColor="#4AF8E4"/>
+        </shape>
+    </item>
+</ripple>
